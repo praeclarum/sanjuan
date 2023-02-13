@@ -23,6 +23,14 @@
         th {
             background-color: #dddddd;
         }
+
+        .open {
+            background-color: #00ff00;
+        }
+
+        .closed {
+            background-color: #ff0000;
+        }
     </style>
 </head>
 
@@ -42,16 +50,72 @@
         {% for store in site.data.storehours.stores %}
         <tr>
             <td>{{ store.emoji }} {{ store.name }}</td>
-            <td>{{ store.winterHours.mon }}</td>
-            <td>{{ store.winterHours.tue }}</td>
-            <td>{{ store.winterHours.wed }}</td>
-            <td>{{ store.winterHours.thu }}</td>
-            <td>{{ store.winterHours.fri }}</td>
-            <td>{{ store.winterHours.sat }}</td>
-            <td>{{ store.winterHours.sun }}</td>
+            <td class="hours mon">{{ store.winterHours.mon }}</td>
+            <td class="hours tue">{{ store.winterHours.tue }}</td>
+            <td class="hours wed">{{ store.winterHours.wed }}</td>
+            <td class="hours thu">{{ store.winterHours.thu }}</td>
+            <td class="hours fri">{{ store.winterHours.fri }}</td>
+            <td class="hours sat">{{ store.winterHours.sat }}</td>
+            <td class="hours sun">{{ store.winterHours.sun }}</td>
         </tr>
         {% endfor %}
     </table>
+    <script>
+        // Parses a strings like "7:30am" and "9pm"
+        // into a 24-hour clock expressed as minutes.
+        function parseTime(timeString) {
+            let isAm = false;
+            if (timeString.includes("am")) {
+                isAm = true;
+            }
+            timeString = timeString.replace("am", "").replace("pm", "");
+            const timeSplit = timeString.split(":");
+            const hours = parseInt(timeSplit[0]);
+            const minutes = timeSplit.length > 1 ? parseInt(timeSplit[1]) : 0;
+            if (!isAm) {
+                return hours * 60 + minutes + 12 * 60;
+            } else {
+                return hours * 60 + minutes;
+            }
+        }
+
+        // Parses a string like "7:30am - 9pm"
+        // and returns an object with the start and end times
+        // parsed into a 24-hour clock expressed as minutes since midnight.
+        function parseHours(hoursString) {
+            const hours = hoursString.split(" - ");
+            return {
+                start: parseTime(hours[0]),
+                end: parseTime(hours[1])
+            };
+        }
+
+        // Get the local time as minutes since local midnight.
+        const localDate = new Date();
+        const localTime = localDate.getHours() * 60 + localDate.getMinutes();
+
+        //  the abbreviated day of week
+        const dayAbbrevs = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+        const dayOfWeek = dayAbbrevs[localDate.getDay()];
+
+        // Highlight all the tds with the current day of week
+        // green if open, red if closed.
+        const tds = document.getElementsByClassName("hours " + dayOfWeek);
+        for (let i = 0; i < tds.length; i++) {
+            const td = tds[i];
+            const timeString = td.innerHTML.trim();
+            if (timeString.length === 0) {
+                td.className += " closed";
+                continue;
+            }
+            const hours = parseHours(td.innerHTML);
+            if (hours.start <= localTime && localTime <= hours.end) {
+                td.className += " open";
+            } else {
+                td.className += " closed";
+            }
+        }
+    </script>
 </body>
 
 </html>
