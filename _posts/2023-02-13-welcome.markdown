@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Welcome to San Juan Almanac"
+date:   2023-02-13 11:24:13 -0800
+categories: update
+---
+
+I have just built this site but hope that it will
+continue to grow and evolve over time and be full
+of useful information for the residents of San Juan
+Island.
