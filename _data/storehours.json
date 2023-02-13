@@ -56,6 +56,24 @@
             }
         },
         {
+            "name": "Thrift House",
+            "emoji": "🛍",
+            "address": "667 Mullis St",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-378-8483",
+            "winterHours": {
+                "mon": "",
+                "tue": "9am - 4pm",
+                "wed": "9am - 4pm",
+                "thu": "9am - 4pm",
+                "fri": "9am - 4pm",
+                "sat": "9am - 4pm",
+                "sun": ""
+            }
+        },
+        {
             "name": "Friday Harbor Market Place",
             "emoji": "🥖",
             "address": "515 Market St",
@@ -71,6 +89,24 @@
                 "fri": "8am - 6pm",
                 "sat": "8am - 6pm",
                 "sun": ""
+            }
+        },
+        {
+            "name": "Kings Market",
+            "emoji": "🥖",
+            "address": "160 Spring St",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-378-4505",
+            "winterHours": {
+                "mon": "7:30am - 9pm",
+                "tue": "7:30am - 9pm",
+                "wed": "7:30am - 9pm",
+                "thu": "7:30am - 9pm",
+                "fri": "7:30am - 9pm",
+                "sat": "7:30am - 9pm",
+                "sun": "7:30am - 9pm"
             }
         },
         {
@@ -90,24 +126,6 @@
                 "fri": "11am - 9pm",
                 "sat": "11am - 9pm",
                 "sun": "11am - 9pm"
-            }
-        },
-        {
-            "name": "Kings Market",
-            "emoji": "🥖",
-            "address": "160 Spring St",
-            "city": "Friday Harbor",
-            "state": "WA",
-            "zip": "98250",
-            "phone": "360-378-4505",
-            "winterHours": {
-                "mon": "7:30am - 9pm",
-                "tue": "7:30am - 9pm",
-                "wed": "7:30am - 9pm",
-                "thu": "7:30am - 9pm",
-                "fri": "7:30am - 9pm",
-                "sat": "7:30am - 9pm",
-                "sun": "7:30am - 9pm"
             }
         },
         {
