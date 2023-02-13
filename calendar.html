@@ -1,0 +1,57 @@
+---
+---
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>San Juan Island Store Hours</h1>
+    <table>
+        <tr>
+            <th>Store Name</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        {% for store in site.data.storehours.stores %}
+        <tr>
+            <td>{{ store.emoji }} {{ store.name }}</td>
+            <td>{{ store.winterHours.mon }}</td>
+            <td>{{ store.winterHours.tue }}</td>
+            <td>{{ store.winterHours.wed }}</td>
+            <td>{{ store.winterHours.thu }}</td>
+            <td>{{ store.winterHours.fri }}</td>
+            <td>{{ store.winterHours.sat }}</td>
+            <td>{{ store.winterHours.sun }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

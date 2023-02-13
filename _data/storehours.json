@@ -1,0 +1,133 @@
+{
+    "stores": [
+        {
+            "name": "Ace Hardware",
+            "emoji": "🔨",
+            "website": "http://www.acefh.com",
+            "address": "340 Argyle Ave",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-378-2168",
+            "winterHours": {
+                "mon": "8am - 6pm",
+                "tue": "8am - 6pm",
+                "wed": "8am - 6pm",
+                "thu": "8am - 6pm",
+                "fri": "8am - 6pm",
+                "sat": "8am - 6pm",
+                "sun": "9am - 5pm"
+            }
+        },
+        {
+            "name": "Browne's Home Center",
+            "emoji": "🔨",
+            "address": "860 Mullis St",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-378-2168",
+            "winterHours": {
+                "mon": "7am - 6pm",
+                "tue": "7am - 6pm",
+                "wed": "7am - 6pm",
+                "thu": "7am - 6pm",
+                "fri": "7am - 6pm",
+                "sat": "8am - 5pm",
+                "sun": "8am - 5pm"
+            }
+        },
+        {
+            "name": "Community Treasures",
+            "emoji": "🛍",
+            "address": "6739 Roche Harbor Rd",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-370-5562",
+            "winterHours": {
+                "mon": "",
+                "tue": "",
+                "wed": "11am - 5pm",
+                "thu": "11am - 5pm",
+                "fri": "11am - 6pm",
+                "sat": "9am - 5pm",
+                "sun": ""
+            }
+        },
+        {
+            "name": "Friday Harbor Market Place",
+            "emoji": "🥖",
+            "address": "515 Market St",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-378-3238",
+            "winterHours": {
+                "mon": "8am - 6pm",
+                "tue": "8am - 6pm",
+                "wed": "8am - 6pm",
+                "thu": "8am - 6pm",
+                "fri": "8am - 6pm",
+                "sat": "8am - 6pm",
+                "sun": ""
+            }
+        },
+        {
+            "name": "Haleys Sports Bar and Grill",
+            "emoji": "🍺",
+            "website": "",
+            "address": "175 Spring St",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-378-4434",
+            "winterHours": {
+                "mon": "11am - 9pm",
+                "tue": "11am - 9pm",
+                "wed": "11am - 9pm",
+                "thu": "11am - 9pm",
+                "fri": "11am - 9pm",
+                "sat": "11am - 9pm",
+                "sun": "11am - 9pm"
+            }
+        },
+        {
+            "name": "Kings Market",
+            "emoji": "🥖",
+            "address": "160 Spring St",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-378-4505",
+            "winterHours": {
+                "mon": "7:30am - 9pm",
+                "tue": "7:30am - 9pm",
+                "wed": "7:30am - 9pm",
+                "thu": "7:30am - 9pm",
+                "fri": "7:30am - 9pm",
+                "sat": "7:30am - 9pm",
+                "sun": "7:30am - 9pm"
+            }
+        },
+        {
+            "name": "San Juan Island Brewing Co",
+            "emoji": "🍺",
+            "website": "http://www.acefh.com",
+            "address": "340 Argyle Ave",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-378-2168",
+            "winterHours": {
+                "mon": "11am - 8pm",
+                "tue": "",
+                "wed": "11am - 8pm",
+                "thu": "11am - 8pm",
+                "fri": "11am - 8pm",
+                "sat": "11am - 8pm",
+                "sun": "11am - 8pm"
+            }
+        }
+   ]
+}
