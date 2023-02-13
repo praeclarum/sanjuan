@@ -1,6 +1,25 @@
 {
     "stores": [
         {
+            "name": "San Juan Transfer Station",
+            "emoji": "🚮",
+            "website": "https://www.sanjuantransferstation.com",
+            "address": "212 Sutton Rd",
+            "city": "Friday Harbor",
+            "state": "WA",
+            "zip": "98250",
+            "phone": "360-378-8449",
+            "winterHours": {
+                "mon": "9am - 12pm",
+                "tue": "",
+                "wed": "",
+                "thu": "",
+                "fri": "9am - 4pm",
+                "sat": "9am - 4pm",
+                "sun": "9am - 4pm"
+            }
+        },
+        {
             "name": "Ace Hardware",
             "emoji": "🔨",
             "website": "http://www.acefh.com",

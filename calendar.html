@@ -72,7 +72,7 @@
             const timeSplit = timeString.split(":");
             const hours = parseInt(timeSplit[0]);
             const minutes = timeSplit.length > 1 ? parseInt(timeSplit[1]) : 0;
-            if (!isAm) {
+            if (!isAm && hours < 12) {
                 return hours * 60 + minutes + 12 * 60;
             } else {
                 return hours * 60 + minutes;
